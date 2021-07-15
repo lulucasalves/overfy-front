@@ -123,7 +123,7 @@ button {
 
 .menu li a:hover {
   color: var(--color-secondary);
-  transition: .5s ease;
+  transition: .3s ease;
 }
 
 #button {
@@ -258,4 +258,52 @@ button {
   font-weight: 700;
   color: var(--color-background);
   text-align: center;
+}
+
+.reasons-to-travel {
+  grid-area: reasons-to-travel;
+  padding-bottom: var(--sd-padding-size);
+}
+
+.reasons-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, auto));
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--sd-padding-size);
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-item span {
+  font-size: var(--big-font-size);
+  font-weight: 700;
+  color: var(--color-base);
+
+  padding-right: 1rem;
+  width: 100%;
+  max-width: 56px;
+}
+
+.reason-item p {
+  font-size: var(--sd-font-size);
+  font-weight: 400;
+  color: var(--color-base);
+  text-align: center;
+
+  padding: 3rem 0;
+  padding-top: 3rem;
+  width: 75%;
+}
+
+.travelers {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.travelers img {
+  width: 100%;
 }
