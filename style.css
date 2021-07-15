@@ -203,3 +203,59 @@ button {
   width: 90%;
 }
 
+/*best-destinations*/
+.best-destinations {
+  grid-area: best-destinations;
+  padding-bottom: var(--sd-padding-size);
+}
+
+.trip-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: var(--sd-padding-size);
+}
+
+.trip-card {
+  width: 30%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#cardone {
+  background: url(/images/brooklyn.jpg) center center;
+  background-size: cover;
+}
+
+#cardtwo {
+  background: url(/images/praia.jpg) center center;
+  background-size: cover;
+}
+
+#cardthree {
+  background: url(/images/montanhas.jpg) center center;
+  background-size: cover;
+}
+
+.trip-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: var(--color-secondary);
+  padding: 2rem;
+
+  max-height: 86px;
+  height: 100%;
+} 
+
+.trip-name p {
+  font-size: var(--sd-font-size);
+  font-weight: 700;
+  color: var(--color-background);
+  text-align: center;
+}
