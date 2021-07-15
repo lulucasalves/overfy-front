@@ -1,85 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+  <!--Font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--Style-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Configurations-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Document</title>
+  <title>Overfly</title>
+
 </head>
 <body>
-  <header class="header">
-    <a class="logo" href="#">Logo</a>
-    <nav>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-<!--
-  <section class="flex">
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-  </section>
+  <div class="container">
 
-  <section class="grid1">
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Legend</p>
-    </div>
-    <div class="anuncio">
-      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80">
-      <p>Anuncio</p>
-    </div>
-  </section>
--->
-  <section class="grid2">
-    
-  </section>
+    <header class="header">
+
+      <div class="brand-menu-container">
+
+        <a href="#">
+          <img class="logo" src="/images/overFy-logo-grande.png" alt="Logo Overfly">
+        </a>
+
+        <div class="menu-toggle-container">
+          <i class="fas fa-bars"></i>
+        </div>
+
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#destinaions" id="destinations">Destinos</a></li>
+          <li><a href="#prices" id="prices">Preços</a></li>
+          <li><a href="#contact" id="button">Contato</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="main">
+
+      <section class="greetings">
+
+        <div class="content-invite">
+          <h1>Hey,
+              vamos tirar
+              férias?
+          </h1>
+          <p>Você escolhe o destino e nós cuidamos de
+          todas as etapas <span>Viaje tranquilo :)</span></p>
+        </div>
+
+        <div class="figure-travelling">
+          <img src="/images/passageiraOverFy.png" alt="Passagens e hotéis">
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
 </body>
 </html>
