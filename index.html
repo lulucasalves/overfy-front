@@ -2,15 +2,15 @@
 <html lang="pt-br">
 <head>
 
-  <!--Icon-->
+  <!--Icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!--Font-->
+  <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!--Style-->
+  <!--Styles-->
   <link rel="stylesheet" href="style.css">
 
   <!--Configurations-->
@@ -22,11 +22,12 @@
 <body>
   <div class="container">
 
-    <header class="header">
+    <!--Menu-->
+    <header class="header" id="home">
 
       <div class="brand-menu-container">
 
-        <a href="#">
+        <a href="#home">
           <img class="logo" src="/images/overFy-logo-grande.png" alt="Logo Overfly">
         </a>
 
@@ -38,21 +39,25 @@
 
       <nav>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#destinaions" id="destinations">Destinos</a></li>
-          <li><a href="#prices" id="prices">Preços</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations" id="destinations">Destinos</a></li>
+          <li><a href="#prices">Preços</a></li>
           <li><a href="#contact" id="button">Contato</a></li>
         </ul>
       </nav>
 
     </header>
 
+    <!--Content-->
     <main class="main">
 
+      <!--Home-->
       <section class="greetings">
 
+        <!--Title (h1)-->
         <div class="content-invite">
-          <h1>Hey,
+          <h1>
+              Hey,
               vamos tirar
               férias?
           </h1>
@@ -60,13 +65,15 @@
           todas as etapas <span>Viaje tranquilo :)</span></p>
         </div>
 
+        <!--Figure-->
         <div class="figure-travelling">
           <img src="/images/passageiraOverFy.png" alt="Passagens e hotéis">
         </div>
 
       </section>
 
-      <section class="best-destinations">
+      <!--Destinations-->
+      <section class="best-destinations" id="destinations">
 
         <h2>Destinos populares</h2>
 
@@ -94,12 +101,14 @@
 
       </section>
 
+      <!--Reasons to travel-->
       <section class="reasons-to-travel">
 
         <h2>Motivos para viajar conosco</h2>
 
           <div class="reasons-container">
 
+            <!--Itens-->
             <div class="reasons-list">
 
               <div class="reason-item">
@@ -134,6 +143,7 @@
 
             </div>
 
+            <!--Figure-->
             <div class="travelers">
               <img src="/images/casalFeliz.png" alt="Viajantes da Overfy">
             </div>
@@ -142,7 +152,173 @@
 
       </section>
 
+      <!--Prices-->
+      <section class="prices" id="prices">
+
+        <!--Title-->
+        <div class="header-prices">
+          <h2>Nossos preços</h2>
+          <p>Escolha o plano mais adequado para você</p>
+        </div>
+
+        <!--Cards-->
+        <div class="prices-card-container">
+
+          <!--Standard-->
+          <div class="card" id="standard">
+            <div class="card-body">
+
+              <p class="price">R$ 100,00 <span>/por mês</span></p>
+              <p class="plan-type">Standard</p>
+              <p class="plan-text">Pra quem está començando a viajar</p>
+
+              <ul class="plan-list">
+                <li>
+                  <i class="fas fa-dot-circle"></i> Viagens nacionais
+                </li>
+
+                <li>
+                  <i class="fas fa-dot-circle"></i> City tour/Guias locais
+                </li>
+
+                <li>
+                  <i class="fas fa-dot-circle"></i> 3 diárias
+                </li>
+              </ul>
+
+              <div class="plan-btn-container">
+                <button type="button" id="bt-standard" value="standard">Meu plano</button>
+              </div>
+  
+            </div>
+          </div>
+
+          <!--Essentials-->
+          <div class="card" id="essentials">
+
+            <div class="card-body">
+
+              <p class="price">R$ 160,00 <span>/por mês</span></p>
+              <p class="plan-type">Essentials</p>
+              <p class="plan-text">Pra quem curte uma estadia longa</p>
+
+              <ul class="plan-list">
+                <li>
+                  <i class="fas fa-dot-circle"></i> Viagens nacionais
+                </li>
+
+                <li>
+                  <i class="fas fa-dot-circle"></i> City tour/Guias locais
+                </li>
+
+                <li>
+                  <i class="fas fa-dot-circle"></i> 5 diárias
+                </li>
+
+                <li>
+                  <i class="fas fa-dot-circle"></i> Overfly Experience
+                </li>
+              </ul>
+
+              <div class="plan-btn-container">
+                <button type="button" id="bt-essentials" value="essentials">Meu plano</button>
+              </div>
+  
+            </div>
+
+          </div>
+
+          <!--Premium-->
+          <div class="card" id="premium">
+
+            <div class="card-body">
+
+              <p class="price">R$ 250,00 <span>/por mês</span></p>
+              <p class="plan-type">Premium</p>
+              <p class="plan-text">A melhor experiência! Overfly internacional</p>
+
+              <ul class="plan-list">
+                <li>
+                  <i class="fas fa-dot-circle"></i> Viagens Internacionais
+                </li>
+
+                <li>
+                  <i class="fas fa-dot-circle"></i> City tour/Guias locais
+                </li>
+
+                <li>
+                  <i class="fas fa-dot-circle"></i> 7 diárias
+                </li>
+
+                <li>
+                  <i class="fas fa-dot-circle"></i> Overfly Experience Internacional
+                </li>
+              </ul>
+
+              <div class="plan-btn-container">
+                <button type="button" id="bt-premium" value="premium">Meu plano</button>
+              </div>
+  
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
     </main>
+
+    <footer class="footer" id="contact">
+
+      <div class="footer-menu-container">
+
+        <div class="footer-menu-item">
+          <span>Companhia</span>
+          <ul class="footer-menu">
+            <li>Carreiras</li>
+            <li>Sobre nós</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+
+        <div class="footer-menu-item">
+          <span>Links úteis</span>
+          <ul class="footer-menu">
+            <li>Termos de uso</li>
+            <li>Política de privacidade</li>
+          </ul>
+        </div>
+
+        <div class="footer-menu-item">
+          <span>Recursos</span>
+          <ul class="footer-menu">
+            <li>Central de ajuda</li>
+            <li>Conheça o Brasil</li>
+            <li>Viagens Internacionais</li>
+            <li>Seguro viagem</li>
+          </ul>
+        </div>
+
+        <div class="footer-menu-item">
+
+          <div class="social media container">
+            <ul class="menu-social-media">
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-youtube"></i></li>
+            </ul>
+          </div>
+
+          <a href="/" class="brand-container">
+            <img src="/images/overFy-logo-grande.png" alt="Overfly logo">
+          </a>
+          
+        </div>
+        
+      </div>
+
+    </footer>
 
   </div>
 </body>

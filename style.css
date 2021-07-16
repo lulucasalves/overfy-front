@@ -1,9 +1,11 @@
+/*Resets*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/*Paterns*/
 :root {
   /*colors*/
   --color-base: #0e2844;
@@ -11,27 +13,28 @@
   --color-background: #fafafa;
   --color-soft: #fff9f4;
 
-  /*fonts*/
+  /*font size*/
   font-size: 10px;
   --sd-font-size: 2rem;
   --medium-font-size: 2.5rem;
   --big-font-size: 3.5rem;
   --h1-font-size: 5.5rem;
   --li-font-size: 1.8rem;
+  --card-big-font-size: 3rem;
+  --card-sd-font-size: 1.8rem;
 
   /*padding*/
   --sd-padding-size: 6rem;
   --ft-padding-size: 10rem;
 }
 
+/*Structure*/
 body {
   width: 100%;
-  max-width: 1250px;
+  max-width: 1400px;
   height: 100vh;
-
   margin: 0 auto;
   padding: 3rem 5%;
-
   font-family: 'Quicksand', sans-serif;
   background-color: var(--color-background);
 }
@@ -55,17 +58,15 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-family: 'Quicksand', sans-serif;
   font-size: var(--sd-font-size);
   font-weight: 700;
-
   border: none;
   border-radius: 1rem;
   cursor: pointer;
 }
 
-/*container*/
+/*Content*/
 #container {
   display: grid;
   grid-template-areas:
@@ -74,7 +75,7 @@ button {
   "footer";
 }
 
-/*header*/
+/*Menu*/
 .header {
   grid-area: header;
   display: flex;
@@ -82,13 +83,11 @@ button {
   align-items: center;
 }
 
-/*brand*/
 .brand-menu-container {
   display: flex;
   align-items: center;
 }
 
-/*logo*/
 .logo {
   max-width: 280px; 
 }
@@ -97,16 +96,13 @@ button {
   width: 90%;
 }
 
-/*menu-1*/
 .menu-toggle-container {
   font-size: 3rem;
   color: var(--color-secondary);
-
   cursor: pointer;
   display: none;
 }
 
-/*menu-2*/
 .menu {
   display: flex;
   align-items: center;
@@ -116,7 +112,6 @@ button {
   font-size: var(--sd-font-size);
   font-weight: 700;
   color: var(--color-base);
-
   padding: 1rem;
   margin-right: 1.5rem;
 }
@@ -130,13 +125,9 @@ button {
   width: 100%;
   padding: 1rem 2.5rem;
   background: var(--color-secondary);
-
   display: flex;
   justify-content: center;
-  
-  
   color: var(--color-background);
-
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -147,7 +138,7 @@ button {
   transition: .5s ease;
 }
 
-/*main*/
+/*Content*/
 .main {
   display: grid;
   grid-template-areas:
@@ -157,14 +148,13 @@ button {
   "prices prices";
 }
 
-/*greetings*/
+/*Home*/
 .greetings {
   grid-area: greetings;
   display: grid;
   grid-template-columns: repeat(2, minmax(50%, auto));
   justify-content: center;
   align-items: center;
-
   padding-bottom: var(--sd-padding-size);
 }
 
@@ -175,10 +165,8 @@ button {
 .content-invite h1 {
   font-size: var(--h1-font-size);
   font-weight: 700;
-
   line-height: 1.25;
   text-align: justify;
-
   padding-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -193,17 +181,16 @@ button {
   color: var(--color-secondary);
 }
 
-/*figure-travelling*/
 .figure-travelling {
   display: flex;
   justify-content: flex-end;
 }
 
 .figure-travelling img {
-  width: 90%;
+  width: 95%;
 }
 
-/*best-destinations*/
+/*Destinations*/
 .best-destinations {
   grid-area: best-destinations;
   padding-bottom: var(--sd-padding-size);
@@ -213,14 +200,12 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   padding-top: var(--sd-padding-size);
 }
 
 .trip-card {
   width: 30%;
   height: 500px;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -245,10 +230,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   background: var(--color-secondary);
   padding: 2rem;
-
   max-height: 86px;
   height: 100%;
 } 
@@ -260,6 +243,7 @@ button {
   text-align: center;
 }
 
+/*Reasons to travel*/
 .reasons-to-travel {
   grid-area: reasons-to-travel;
   padding-bottom: var(--sd-padding-size);
@@ -282,7 +266,6 @@ button {
   font-size: var(--big-font-size);
   font-weight: 700;
   color: var(--color-base);
-
   padding-right: 1rem;
   width: 100%;
   max-width: 56px;
@@ -293,7 +276,6 @@ button {
   font-weight: 400;
   color: var(--color-base);
   text-align: center;
-
   padding: 3rem 0;
   padding-top: 3rem;
   width: 75%;
@@ -306,4 +288,175 @@ button {
 
 .travelers img {
   width: 100%;
+}
+
+/*Prices*/
+.prices {
+  grid-area: prices;
+  padding-bottom: var(--ft-padding-size);
+}
+
+.header-prices h2 {
+  font-size: var(--big-font-size);
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.header-prices p {
+  font-size: var(--big-font-size);
+  font-weight: 700;
+  color: var(--color-base);
+  text-align: center;
+  padding: 4rem;
+}
+
+.prices-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--color-soft);
+  border: solid .3rem var(--color-secondary);
+  border-radius: 1rem;
+  padding: 4rem 2rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 38rem;
+  height: 53rem;
+  padding: 5rem 2.5rem;
+  margin-right: 2rem;
+  background: var(--color-base);
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+}
+
+.card #premium {
+  margin-right: 0;
+}
+
+.card-body {
+  height: 100%;
+  font-weight: 700;
+  color: var(--color-background);
+}
+
+.card-body .price {
+  font-size: var(--card-big-font-size);
+}
+
+.card-body .price span {
+  font-size: var(--card-sd-font-size);
+}
+
+.card-body .plan-type {
+  font-size: var(--card-big-font-size);
+  color: var(--color-secondary);
+  padding-top: 0.5rem;
+}
+
+.card-body .plan-text {
+  font-size: var(--card-sd-font-size);
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.card-body .plan-list {
+  max-height: 200px;
+  height: 100%;
+  padding-top: 2rem;
+}
+
+.card-body .plan-list li {
+  display: flex;
+  align-items: center;
+  font-size: var(--li-font-size);
+}
+
+.card-body .plan-list i {
+  font-size: 2rem;
+  padding: 1rem 1.2rem 1rem 0;
+}
+
+.plan-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.plan-btn-container button {
+  width: 70%;
+  padding: 1.5rem 2rem;
+  background: var(--color-background);
+  border: solid 0.3rem var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+/*Footer*/
+.footer {
+  grid-area: footer;
+  padding: 5rem;
+}
+
+.footer-menu-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, auto));
+}
+
+.footer-menu-item span {
+  display: inline-block;
+  font-size: var(--medium-font-size);
+  font-weight: 700;
+  color: var(--color-secondary);
+  padding-bottom: 1.8rem;
+}
+
+.footer-menu li {
+  font-size: var(--li-font-size);
+  font-weight: 700;
+  color: var(--color-base);
+  padding: 0.8rem 0;
+  cursor: pointer;
+}
+
+.menu-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-social-media li {
+  min-width: 5rem;
+  min-height: 5rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+  background: var(--color-secondary);
+  font-size: 2.5rem;
+  color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-social-media li:last-child {
+  margin-right: 0;
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.brand-container img {
+  width: 80%;
 }
