@@ -7,13 +7,13 @@
 
 /*Paterns*/
 :root {
-  /*colors*/
+  /*Colors*/
   --color-base: #0e2844;
   --color-secondary: #ff6525;
   --color-background: #fafafa;
   --color-soft: #fff9f4;
 
-  /*font size*/
+  /*Font size*/
   font-size: 10px;
   --sd-font-size: 2rem;
   --medium-font-size: 2.5rem;
@@ -23,7 +23,7 @@
   --card-big-font-size: 3rem;
   --card-sd-font-size: 1.8rem;
 
-  /*padding*/
+  /*Padding*/
   --sd-padding-size: 6rem;
   --ft-padding-size: 10rem;
 }
@@ -118,7 +118,7 @@ button {
 
 .menu li a:hover {
   color: var(--color-secondary);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 #button {
@@ -275,7 +275,7 @@ button {
   font-size: var(--sd-font-size);
   font-weight: 400;
   color: var(--color-base);
-  text-align: center;
+  text-align: left;
   padding: 3rem 0;
   padding-top: 3rem;
   width: 75%;
@@ -459,4 +459,174 @@ button {
 
 .brand-container img {
   width: 80%;
+}
+
+@media screen and (max-width: 1100px) {
+
+  :root {
+    --sd-font-size: 1.8rem;
+    --h1-font-size: 6rem;
+  }
+
+  .prices-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    justify-items: center;
+  }
+
+  .card {
+    display: block;
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 955px) {
+
+  .menu-toggle-container {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    z-index: 3;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 25rem;
+    height: 100vh;
+    padding: 10rem 2rem;
+    z-index: 2;
+    background: var(--color-base);
+    flex-direction: column;
+    transition: 0.5s ease;
+    justify-content: center;
+  }
+
+  .menu li a {
+    color: var(--color-background);
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .menu-toggle-container.active {
+    position: fixed;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  
+  :root {
+    --big-font-size: 3rem;
+    --sd-padding-size: 5rem;
+    --ft-padding-size: 8rem;
+  }
+
+  .logo {
+    max-width: 177px;
+  }
+
+  .greetings {
+    display: block;
+    padding: 4rem 0 5rem;
+  }
+
+  .content-invite {
+    white-space: normal;
+    text-align: left;
+  }
+
+  .content-invite h1 {
+    text-align: center;
+  }
+
+  .content-invite p {
+    max-width: 80%;
+    padding-top: 4rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .figure-travelling, .travelers {
+    justify-content: center;
+  }
+
+  .trip-container {
+    flex-direction: column;
+  }
+
+  .trip-card {
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+
+  .trip-card #card-three {
+    margin-bottom: 0;
+  }
+
+  .reasons-container {
+    display: block;
+  }
+
+  .reason-item p {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .footer-menu-container {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    text-align: center;
+  }
+
+  .brand-container {
+    padding-top: 3rem;
+  }
+
+  .brand-container img {
+    width: 60%;
+  }
+
+ .prices-card-container {
+   margin-bottom: -5rem;
+ }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  :root {
+    --sd-font-size: 1.5rem;
+    --li-font-size: 1.25rem;
+  }
+
+  .content-invite p {
+    max-width: 100%;
+    padding-top: 2rem;
+  }
+
+  .trip-card {
+    width: 100%;
+  }
+
+  .card {
+    padding: 3rem 2rem;
+  }
+
+  .plan-btn-container {
+    padding: 2rem;
+  }
+
+  .plan-btn-container button {
+    width: 100%;
+  }
+
 }

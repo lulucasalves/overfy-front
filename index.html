@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!--Styles-->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 
   <!--Configurations-->
   <meta charset="UTF-8">
@@ -20,7 +20,7 @@
 
 </head>
 <body>
-  <div class="container">
+  <div id="container">
 
     <!--Menu-->
     <header class="header" id="home">
@@ -39,9 +39,9 @@
 
       <nav>
         <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#destinations" id="destinations">Destinos</a></li>
-          <li><a href="#prices">Preços</a></li>
+          <li><a href="#home" id="a-home">Home</a></li>
+          <li><a href="#destinations" id="a-destinations">Destinos</a></li>
+          <li><a href="#prices" id="a-prices">Preços</a></li>
           <li><a href="#contact" id="button">Contato</a></li>
         </ul>
       </nav>
@@ -269,10 +269,12 @@
 
     </main>
 
+    <!--Footer-->
     <footer class="footer" id="contact">
 
       <div class="footer-menu-container">
 
+        <!--Menu itens-->
         <div class="footer-menu-item">
           <span>Companhia</span>
           <ul class="footer-menu">
@@ -302,6 +304,7 @@
 
         <div class="footer-menu-item">
 
+          <!--Social media-->
           <div class="social media container">
             <ul class="menu-social-media">
               <li><i class="fab fa-facebook"></i></li>
@@ -310,6 +313,7 @@
             </ul>
           </div>
 
+          <!--Logo-->
           <a href="/" class="brand-container">
             <img src="/images/overFy-logo-grande.png" alt="Overfly logo">
           </a>
@@ -321,5 +325,9 @@
     </footer>
 
   </div>
+
+  <!--Script-->
+  <script src="index.js"></script>
+
 </body>
 </html>
