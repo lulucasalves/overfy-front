@@ -21,7 +21,6 @@
 /*Structure*/
 body {
   width: 100%;
-  max-width: 1250px;
   margin: 0 auto;
   padding: 5rem 0;
   font-family: 'Quicksand', sans-serif;
@@ -37,8 +36,30 @@ label {
   display: block;
 }
 
+.return {
+  margin: -1.5rem 4rem;
+}
+
+.return button {
+  background: var(--color-white);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-base);
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.return button:hover {
+  opacity: 0.9;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
 /*Content*/
 #container {
+  max-width: 1250px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,9 +178,14 @@ label {
 .btn-container button:hover {
   opacity: 0.9;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
+
+  .return {
+    display: none;
+  }
 
   .card-special-info {
     display: block;
