@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <link rel="icon" type="image/png" href="./images/overFy-icone.png">
+
+    <!--Configurations-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overfy Checkout</title>
+
+  </head>
+  <body>
+
+    <!--Content-->
+    <div id="container">
+      <div class="checkout-container">
+        
+        <!--Introduction-->
+        <div class="congratulations-and-plan-type">
+
+          <h1>Uhuul! Parabéns por sua escolha!</h1>
+          <div class="plan-type">
+            <!--Tipo de plano-->
+          </div>
+
+        </div>
+
+        <!--Form-->
+        <div class="form-container">
+
+          <h2>Detalhes do pagamento</h2>
+
+          <form name="checkout">
+
+            <!--Itens-->
+            <div class="input-group">
+              <label for="name">Seu nome</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="input-group">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="input-group">
+              <label for="cardName">Nome do titular (como no cartão)</label>
+              <input type="text" name="cardName" id="cardName" required>
+            </div>
+
+            <div class="input-group">
+              <label for="cardNumber">Número do cartão</label>
+              <input type="text" name="cardNumber" id="cardNumber" required>
+            </div>
+
+            <div class="card-special-info">
+              
+              <div class="input-group">
+                <label for="expirationDate">Data de expiração</label>
+                <input type="text" name="expirationDate" id="expirationDate" placeholder="Ex.: 01/25 (M/A)" required>
+              </div>
+
+              <div class="input-group">
+                <label for="securityCode">CVV</label>
+                <input type="text" name="securityCode" id="securityCode" required>
+              </div>
+
+          </div>
+
+            <!--Button-->
+            <div class="btn-container">
+              <button>Pagar ;)</button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Scripts-->
+    <script src="./src/checkout.js"></script>
+
+  </body>
+</html>

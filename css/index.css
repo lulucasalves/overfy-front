@@ -18,7 +18,7 @@
   --sd-font-size: 2rem;
   --medium-font-size: 2.5rem;
   --big-font-size: 3.5rem;
-  --h1-font-size: 5.5rem;
+  --h1-font-size: 6rem;
   --li-font-size: 1.8rem;
   --card-big-font-size: 3rem;
   --card-sd-font-size: 1.8rem;
@@ -212,17 +212,17 @@ button {
 }
 
 #cardone {
-  background: url(/images/brooklyn.jpg) center center;
+  background: url(../images/brooklyn.jpg) center center;
   background-size: cover;
 }
 
 #cardtwo {
-  background: url(/images/praia.jpg) center center;
+  background: url(../images/praia.jpg) center center;
   background-size: cover;
 }
 
 #cardthree {
-  background: url(/images/montanhas.jpg) center center;
+  background: url(../images/montanhas.jpg) center center;
   background-size: cover;
 }
 
@@ -325,7 +325,6 @@ button {
   max-width: 38rem;
   height: 53rem;
   padding: 5rem 2.5rem;
-  margin-right: 2rem;
   background: var(--color-base);
   border: none;
   border-radius: 1rem;
@@ -333,6 +332,7 @@ button {
   flex-direction: column;
   justify-content: center;
   word-wrap: break-word;
+  margin: 0 1rem;
 }
 
 .card #premium {
@@ -395,6 +395,12 @@ button {
   background: var(--color-background);
   border: solid 0.3rem var(--color-secondary);
   color: var(--color-secondary);
+}
+
+.plan-btn-container button:hover {
+  color: var(--color-background);
+  background: var(--color-secondary);
+  transition: 0.3s ease;
 }
 
 /*Footer*/
