@@ -1,6 +1,6 @@
 <h1>Overfy</h1>
 
-<p>O Overfy é uma landing page para a apresentação de uma empresa de viajens</p>
+<p>O Overfy é uma landing page para a apresentação de uma empresa de viagens</p>
 
 <img src="https://github.com/lulucasalves/overfy-project/blob/main/.github/img-1.png">
 <img src="https://github.com/lulucasalves/overfy-project/blob/main/.github/img-2.png">
