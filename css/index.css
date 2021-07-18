@@ -133,9 +133,9 @@ button {
   cursor: pointer;
 }
 
-#button:hover{
+#button:hover {
   opacity: 0.8;
-  transition: .5s ease;
+  transition: 0.3s ease;
 }
 
 /*Content*/
