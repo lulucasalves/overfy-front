@@ -1,124 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
+    <!--Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!--Icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/png" href="./images/overFy-icone.png" />
 
-  <!--Styles-->
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="icon" type="image/png" href="./images/overFy-icone.png">
+    <!--Configurations-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overfy</title>
+  </head>
+  <body>
+    <div id="container">
+      <!--Menu-->
+      <header class="header" id="home">
+        <div class="brand-menu-container">
+          <a href="#home">
+            <img
+              class="logo"
+              src="./images/overFy-logo-grande.png"
+              alt="Logo Overfy"
+            />
+          </a>
 
-  <!--Configurations-->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overfy</title>
-
-</head>
-<body>
-  <div id="container">
-
-    <!--Menu-->
-    <header class="header" id="home">
-
-      <div class="brand-menu-container">
-
-        <a href="#home">
-          <img class="logo" src="./images/overFy-logo-grande.png" alt="Logo Overfy">
-        </a>
-
-        <div class="menu-toggle-container">
-          <i class="fas fa-bars"></i>
+          <div class="menu-toggle-container">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
 
-      </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="#home" id="a-home">Home</a></li>
+            <li><a href="#destinations" id="a-destinations">Destinos</a></li>
+            <li><a href="#prices" id="a-prices">Preços</a></li>
+            <li><a href="#contact" id="button">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <nav>
-        <ul class="menu">
-          <li><a href="#home" id="a-home">Home</a></li>
-          <li><a href="#destinations" id="a-destinations">Destinos</a></li>
-          <li><a href="#prices" id="a-prices">Preços</a></li>
-          <li><a href="#contact" id="button">Contato</a></li>
-        </ul>
-      </nav>
-
-    </header>
-
-    <!--Content-->
-    <main class="main">
-
-      <!--Home-->
-      <section class="greetings">
-
-        <!--Title (h1)-->
-        <div class="content-invite">
-          <h1>
-              Hey,
-              vamos tirar
-              férias?
-          </h1>
-          <p>Você escolhe o destino e nós cuidamos de
-          todas as etapas <span>Viaje tranquilo ;)</span></p>
-        </div>
-
-        <!--Figure-->
-        <div class="figure-travelling">
-          <img src="./images/passageiraOverFy.png" alt="Passagens e hotéis">
-        </div>
-
-      </section>
-
-      <!--Destinations-->
-      <section class="best-destinations" id="destinations">
-
-        <h2>Destinos populares</h2>
-
-        <div class="trip-container">
-
-          <div class="trip-card" id="cardone">
-            <div class="trip-name">
-              <p>Brooklyn - EUA (NY)</p>
-            </div>
+      <!--Content-->
+      <main class="main">
+        <!--Home-->
+        <section class="greetings">
+          <!--Title (h1)-->
+          <div class="content-invite">
+            <h1>Hey, vamos tirar férias?</h1>
+            <p>
+              Você escolhe o destino e nós cuidamos de todas as etapas
+              <span>Viaje tranquilo ;)</span>
+            </p>
           </div>
 
-          <div class="trip-card" id="cardtwo">
-            <div class="trip-name">
-              <p>Maragogi - Brasil (AL)</p>
+          <!--Figure-->
+          <div class="figure-travelling">
+            <img src="./images/passageiraOverFy.png" alt="Passagens e hotéis" />
+          </div>
+        </section>
+
+        <!--Destinations-->
+        <section class="best-destinations" id="destinations">
+          <h2>Destinos populares</h2>
+
+          <div class="trip-container">
+            <div class="trip-card" id="cardone">
+              <div class="trip-name">
+                <p>Brooklyn - EUA (NY)</p>
+              </div>
+            </div>
+
+            <div class="trip-card" id="cardtwo">
+              <div class="trip-name">
+                <p>Maragogi - Brasil (AL)</p>
+              </div>
+            </div>
+
+            <div class="trip-card" id="cardthree">
+              <div class="trip-name">
+                <p>Aconcágua - Argentina (MZ)</p>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="trip-card" id="cardthree">
-            <div class="trip-name">
-              <p>Aconcágua - Argentina (MZ)</p>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <!--Reasons to travel-->
-      <section class="reasons-to-travel">
-
-        <h2>Motivos para viajar conosco</h2>
+        <!--Reasons to travel-->
+        <section class="reasons-to-travel">
+          <h2>Motivos para viajar conosco</h2>
 
           <div class="reasons-container">
-
             <!--Itens-->
             <div class="reasons-list">
-
               <div class="reason-item">
                 <div class="header-item">
                   <span>01</span>
                   <h3>Preço competitivo</h3>
                 </div>
                 <p>
-                  Nós temos os melhores preços do mercado, temos pacotes para todos os tipos que viagem que você gostaria de fazer, não perca a oportunidade de fazer a viagem da sua vida.
+                  Nós temos os melhores preços do mercado, temos pacotes para
+                  todos os tipos que viagem que você gostaria de fazer, não
+                  perca a oportunidade de fazer a viagem da sua vida.
                 </p>
               </div>
 
@@ -128,7 +124,9 @@
                   <h3>Qualidade & Segurança</h3>
                 </div>
                 <p>
-                  Prezamos pela qualidade de nossos serviços, não se preocupe caso haja quelquer problema, nosso suporte está disponível 24h para atender as suas necessidades.
+                  Prezamos pela qualidade de nossos serviços, não se preocupe
+                  caso haja quelquer problema, nosso suporte está disponível 24h
+                  para atender as suas necessidades.
                 </p>
               </div>
 
@@ -138,199 +136,172 @@
                   <h3>Muita gente já viajou</h3>
                 </div>
                 <p>
-                  Temos mais de 10 mil clientes satisfeitos com nossos serviços, somos a melhor agência de viagens do mercado, com parceiria as melhores empresas de viagens do Brasil.
+                  Temos mais de 10 mil clientes satisfeitos com nossos serviços,
+                  somos a melhor agência de viagens do mercado, com parceiria as
+                  melhores empresas de viagens do Brasil.
                 </p>
               </div>
-
             </div>
 
             <!--Figure-->
             <div class="travelers">
-              <img src="./images/casalFeliz.png" alt="Viajantes da Overfy">
+              <img src="./images/casalFeliz.png" alt="Viajantes da Overfy" />
             </div>
+          </div>
+        </section>
 
+        <!--Prices-->
+        <section class="prices" id="prices">
+          <!--Title-->
+          <div class="header-prices">
+            <h2>Nossos preços</h2>
+            <p>Escolha o plano mais adequado para você</p>
           </div>
 
-      </section>
+          <!--Cards-->
+          <div class="prices-card-container">
+            <!--Standard-->
+            <div class="card" id="standard">
+              <div class="card-body">
+                <p class="price">R$ 100,00 <span>/por mês</span></p>
+                <p class="plan-type">Standard</p>
+                <p class="plan-text">Pra quem está començando a viajar</p>
 
-      <!--Prices-->
-      <section class="prices" id="prices">
+                <ul class="plan-list">
+                  <li><i class="fas fa-dot-circle"></i> Viagens nacionais</li>
 
-        <!--Title-->
-        <div class="header-prices">
-          <h2>Nossos preços</h2>
-          <p>Escolha o plano mais adequado para você</p>
-        </div>
+                  <li>
+                    <i class="fas fa-dot-circle"></i> City tour/Guias locais
+                  </li>
 
-        <!--Cards-->
-        <div class="prices-card-container">
+                  <li><i class="fas fa-dot-circle"></i> 3 diárias</li>
+                </ul>
 
-          <!--Standard-->
-          <div class="card" id="standard">
-            <div class="card-body">
-
-              <p class="price">R$ 100,00 <span>/por mês</span></p>
-              <p class="plan-type">Standard</p>
-              <p class="plan-text">Pra quem está començando a viajar</p>
-
-              <ul class="plan-list">
-                <li>
-                  <i class="fas fa-dot-circle"></i> Viagens nacionais
-                </li>
-
-                <li>
-                  <i class="fas fa-dot-circle"></i> City tour/Guias locais
-                </li>
-
-                <li>
-                  <i class="fas fa-dot-circle"></i> 3 diárias
-                </li>
-              </ul>
-
-              <div class="plan-btn-container">
-                <button type="button" id="bt-standard" value="standard">Meu plano</button>
+                <div class="plan-btn-container">
+                  <button type="button" id="bt-standard" value="standard">
+                    Meu plano
+                  </button>
+                </div>
               </div>
-  
             </div>
-          </div>
 
-          <!--Essentials-->
-          <div class="card" id="essentials">
+            <!--Essentials-->
+            <div class="card" id="essentials">
+              <div class="card-body">
+                <p class="price">R$ 160,00 <span>/por mês</span></p>
+                <p class="plan-type">Essentials</p>
+                <p class="plan-text">Pra quem curte uma estadia longa</p>
 
-            <div class="card-body">
+                <ul class="plan-list">
+                  <li><i class="fas fa-dot-circle"></i> Viagens nacionais</li>
 
-              <p class="price">R$ 160,00 <span>/por mês</span></p>
-              <p class="plan-type">Essentials</p>
-              <p class="plan-text">Pra quem curte uma estadia longa</p>
+                  <li>
+                    <i class="fas fa-dot-circle"></i> City tour/Guias locais
+                  </li>
 
-              <ul class="plan-list">
-                <li>
-                  <i class="fas fa-dot-circle"></i> Viagens nacionais
-                </li>
+                  <li><i class="fas fa-dot-circle"></i> 5 diárias</li>
 
-                <li>
-                  <i class="fas fa-dot-circle"></i> City tour/Guias locais
-                </li>
+                  <li><i class="fas fa-dot-circle"></i> Overfy Experience</li>
+                </ul>
 
-                <li>
-                  <i class="fas fa-dot-circle"></i> 5 diárias
-                </li>
-
-                <li>
-                  <i class="fas fa-dot-circle"></i> Overfy Experience
-                </li>
-              </ul>
-
-              <div class="plan-btn-container">
-                <button type="button" id="bt-essentials" value="essentials">Meu plano</button>
+                <div class="plan-btn-container">
+                  <button type="button" id="bt-essentials" value="essentials">
+                    Meu plano
+                  </button>
+                </div>
               </div>
-  
             </div>
 
-          </div>
+            <!--Premium-->
+            <div class="card" id="premium">
+              <div class="card-body">
+                <p class="price">R$ 250,00 <span>/por mês</span></p>
+                <p class="plan-type">Premium</p>
+                <p class="plan-text">
+                  A melhor experiência! Overfy internacional
+                </p>
 
-          <!--Premium-->
-          <div class="card" id="premium">
+                <ul class="plan-list">
+                  <li>
+                    <i class="fas fa-dot-circle"></i> Viagens Internacionais
+                  </li>
 
-            <div class="card-body">
+                  <li>
+                    <i class="fas fa-dot-circle"></i> City tour/Guias locais
+                  </li>
 
-              <p class="price">R$ 250,00 <span>/por mês</span></p>
-              <p class="plan-type">Premium</p>
-              <p class="plan-text">A melhor experiência! Overfy internacional</p>
+                  <li><i class="fas fa-dot-circle"></i> 7 diárias</li>
 
-              <ul class="plan-list">
-                <li>
-                  <i class="fas fa-dot-circle"></i> Viagens Internacionais
-                </li>
+                  <li>
+                    <i class="fas fa-dot-circle"></i> Overfy Experience
+                    Internacional
+                  </li>
+                </ul>
 
-                <li>
-                  <i class="fas fa-dot-circle"></i> City tour/Guias locais
-                </li>
-
-                <li>
-                  <i class="fas fa-dot-circle"></i> 7 diárias
-                </li>
-
-                <li>
-                  <i class="fas fa-dot-circle"></i> Overfy Experience Internacional
-                </li>
-              </ul>
-
-              <div class="plan-btn-container">
-                <button type="button" id="bt-premium" value="premium">Meu plano</button>
+                <div class="plan-btn-container">
+                  <button type="button" id="bt-premium" value="premium">
+                    Meu plano
+                  </button>
+                </div>
               </div>
-  
             </div>
-
           </div>
+        </section>
+      </main>
 
-        </div>
-
-      </section>
-
-    </main>
-
-    <!--Footer-->
-    <footer class="footer" id="contact">
-
-      <div class="footer-menu-container">
-
-        <!--Menu itens-->
-        <div class="footer-menu-item">
-          <span>Companhia</span>
-          <ul class="footer-menu">
-            <li>Carreiras</li>
-            <li>Sobre nós</li>
-            <li>Blog</li>
-          </ul>
-        </div>
-
-        <div class="footer-menu-item">
-          <span>Links úteis</span>
-          <ul class="footer-menu">
-            <li>Termos de uso</li>
-            <li>Política de privacidade</li>
-            <li>Covid-19</li>
-          </ul>
-        </div>
-
-        <div class="footer-menu-item">
-          <span>Recursos</span>
-          <ul class="footer-menu">
-            <li>Central de ajuda</li>
-            <li>Conheça o Brasil</li>
-            <li>Viagens Internacionais</li>
-            <li>Seguro viagem</li>
-          </ul>
-        </div>
-
-        <div class="footer-menu-item">
-
-          <!--Social media-->
-          <div class="social media container">
-            <ul class="menu-social-media">
-              <li><i class="fab fa-facebook"></i></li>
-              <li><i class="fab fa-instagram"></i></li>
-              <li><i class="fab fa-youtube"></i></li>
+      <!--Footer-->
+      <footer class="footer" id="contact">
+        <div class="footer-menu-container">
+          <!--Menu itens-->
+          <div class="footer-menu-item">
+            <span>Companhia</span>
+            <ul class="footer-menu">
+              <li>Carreiras</li>
+              <li>Sobre nós</li>
+              <li>Blog</li>
             </ul>
           </div>
 
-          <!--Logo-->
-          <a href="index.html" class="brand-container">
-            <img src="./images/overFy-logo-grande.png" alt="Overfy logo">
-          </a>
-          
+          <div class="footer-menu-item">
+            <span>Links úteis</span>
+            <ul class="footer-menu">
+              <li>Termos de uso</li>
+              <li>Política de privacidade</li>
+              <li>Covid-19</li>
+            </ul>
+          </div>
+
+          <div class="footer-menu-item">
+            <span>Recursos</span>
+            <ul class="footer-menu">
+              <li>Central de ajuda</li>
+              <li>Conheça o Brasil</li>
+              <li>Viagens Internacionais</li>
+              <li>Seguro viagem</li>
+            </ul>
+          </div>
+
+          <div class="footer-menu-item">
+            <!--Social media-->
+            <div class="social media container">
+              <ul class="menu-social-media">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+              </ul>
+            </div>
+
+            <!--Logo-->
+            <a href="index.html" class="brand-container">
+              <img src="./images/overFy-logo-grande.png" alt="Overfy logo" />
+            </a>
+          </div>
         </div>
-        
-      </div>
+      </footer>
+    </div>
 
-    </footer>
-
-  </div>
-
-  <!--Scripts-->
-  <script src="./src/router.js"></script>
-  <script src="./src/index.js"></script>
-
-</body>
+    <!--Scripts-->
+    <script src="./src/router.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
 </html>

@@ -28,8 +28,13 @@
   --ft-padding-size: 10rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Structure*/
 body {
+  scroll-behavior: smooth;
   width: 100%;
   max-width: 1400px;
   height: 100vh;
@@ -48,7 +53,9 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-size: 3rem;
   font-weight: 700;
   color: var(--color-base);
@@ -70,9 +77,9 @@ button {
 #container {
   display: grid;
   grid-template-areas:
-  "header"
-  "main" 
-  "footer";
+    'header'
+    'main'
+    'footer';
 }
 
 /*Menu*/
@@ -89,7 +96,7 @@ button {
 }
 
 .logo {
-  max-width: 280px; 
+  max-width: 280px;
 }
 
 .logo img {
@@ -142,10 +149,10 @@ button {
 .main {
   display: grid;
   grid-template-areas:
-  "greetings greetings"
-  "best-destinations best-destinations"
-  "reasons-to-travel reasons-to-travel"
-  "prices prices";
+    'greetings greetings'
+    'best-destinations best-destinations'
+    'reasons-to-travel reasons-to-travel'
+    'prices prices';
 }
 
 /*Home*/
@@ -234,7 +241,7 @@ button {
   padding: 2rem;
   max-height: 86px;
   height: 100%;
-} 
+}
 
 .trip-name p {
   font-size: var(--sd-font-size);
@@ -315,7 +322,7 @@ button {
   justify-content: space-around;
   align-items: center;
   background: var(--color-soft);
-  border: solid .3rem var(--color-secondary);
+  border: solid 0.3rem var(--color-secondary);
   border-radius: 1rem;
   padding: 4rem 2rem;
 }
@@ -468,7 +475,6 @@ button {
 }
 
 @media screen and (max-width: 1100px) {
-
   :root {
     --sd-font-size: 1.8rem;
     --h1-font-size: 6rem;
@@ -485,11 +491,9 @@ button {
     display: block;
     margin: 0;
   }
-
 }
 
 @media screen and (max-width: 955px) {
-
   .menu-toggle-container {
     display: block;
     position: absolute;
@@ -525,11 +529,9 @@ button {
   .menu.active {
     right: 0;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
-  
   :root {
     --big-font-size: 3rem;
     --sd-padding-size: 5rem;
@@ -561,7 +563,8 @@ button {
     margin: 0 auto;
   }
 
-  .figure-travelling, .travelers {
+  .figure-travelling,
+  .travelers {
     justify-content: center;
   }
 
@@ -601,14 +604,12 @@ button {
     width: 60%;
   }
 
- .prices-card-container {
-   margin-bottom: -5rem;
- }
-
+  .prices-card-container {
+    margin-bottom: -5rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
-
   :root {
     --sd-font-size: 1.5rem;
     --li-font-size: 1.25rem;
@@ -634,5 +635,4 @@ button {
   .plan-btn-container button {
     width: 100%;
   }
-
 }

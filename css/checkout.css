@@ -19,6 +19,7 @@
 }
 
 /*Structure*/
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -26,6 +27,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   background-color: var(--color-base);
   color: var(--color-base);
+  scroll-behavior: smooth;
 }
 
 input {
@@ -182,7 +184,6 @@ label {
 }
 
 @media screen and (max-width: 1024px) {
-
   .return {
     display: none;
   }
@@ -198,11 +199,9 @@ label {
   .card-special-info .input-group input {
     width: 103%;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-  
   :root {
     --sd-font-size: 1.8rem;
     --medium-font-size: 2rem;
@@ -215,13 +214,10 @@ label {
   .form-container {
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 520px) {
-
   .btn-container button {
     width: 80%;
   }
-
 }

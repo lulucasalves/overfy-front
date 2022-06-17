@@ -21,7 +21,7 @@ function disableToggle() {
   let links = []
   links.push(linkHome, linkDestinations, linkPrices, linkButton)
 
-  links.map((element) => {
+  links.map(element => {
     eventDisable(element)
   })
 }

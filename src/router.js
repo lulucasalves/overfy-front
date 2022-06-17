@@ -1,14 +1,18 @@
 window.addEventListener('load', handleButton)
 
-function handleButton () {
-  let standardButton = document.querySelector('#container #standard #bt-standard')
-  let essentialButton = document.querySelector('#container #essentials #bt-essentials')
+function handleButton() {
+  let standardButton = document.querySelector(
+    '#container #standard #bt-standard'
+  )
+  let essentialButton = document.querySelector(
+    '#container #essentials #bt-essentials'
+  )
   let premiumButton = document.querySelector('#container #premium #bt-premium')
 
   let buttonsElements = []
   buttonsElements.push(standardButton, essentialButton, premiumButton)
 
-  buttonsElements.map((element) => {
+  buttonsElements.map(element => {
     handleRouter(element)
   })
 }
